@@ -1,17 +1,14 @@
 build/*
 !build/readme.md
 design/
-src/scss/style.scss
 src/blocks/sprite-svg/img/sprite-svg.svg
+src/blocks/sprite-png/img
 src/blocks/sprite-png/sprite-png.scss
-src/blocks/sprite-png/img/sprite-*.png
-faviconData.json
 
 .Saved/
 _arc/
 bower_components/
 node_modules/
-package-lock.json
 .vscode/
 .DS_Store
 *.log
@@ -22,4 +19,4 @@ package-lock.json
 .publish
 ex_files
 Thumbs.db
-__MACOSX
+__MACOSX/
