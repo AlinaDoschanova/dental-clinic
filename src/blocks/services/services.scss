@@ -6,22 +6,24 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  font-family: $font-family;
-
   &__title {
     font-size: $font-size--h2;
     text-transform: uppercase;
-
+    font-weight: bold;
+    line-height: 22px;
+    margin: 0 0 34px 0;
   }
 
-  .service-minicard {
-  background-color: $main-color;
-  padding: 17px;
-
-  &__text {
-    color: $text-color;
+  &__inner {
+    padding: 37px 0 0 0;
   }
 
+  &__list {
+  margin: 0 0 32px 0;
+  }
+
+  &__dscr p {
+  margin-bottom: 37px;
   }
 
 }
