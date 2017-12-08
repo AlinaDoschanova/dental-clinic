@@ -1,12 +1,20 @@
-$gray-dark:                   hsl(0, 0%, 20%);
+$gray-dark:                   #262626;
 $gray:                        hsl(0, 0%, 50%);
-$gray-light:                  hsl(0, 0%, 80%);
+$gray-light:                  #D5D5D5;
+
+$main-color--lighten:         #E2E9F2;
+$main-color:                  #6AB9D6;
+$second-color:                #3E904E;
+$text-color:                  #FFFFFF;
 
 $text-color:                  $gray-dark;
 
-$font-family:                 'Open Sans_my', sans-serif;
+$font-family:                 'Rubik', sans-serif;
+$font-family--headers:        'Open Sans', sans-serif;
 $font-size:                   14px;
-$line-height:                 1.4;
+$font-size--h1:               22px;
+$font-size--h2:               16px;
+$line-height:                 1.429;
 
 $screen-xs:                   480px;
 $screen-sm:                   768px;

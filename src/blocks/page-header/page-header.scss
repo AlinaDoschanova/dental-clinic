@@ -1,0 +1,18 @@
+// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-header {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__main-line {}
+
+  &__second-line {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+  }
+}
