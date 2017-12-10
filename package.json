@@ -1,16 +1,15 @@
 {
-  "name": "EpicSkills-start-kit",
+  "name": "Dental-clinic",
   "version": "1.0.0",
   "description": "Start project.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "gulp"
   },
-  "author": "Nikolay Gromov",
-  "license": "MIT",
+  "author": "Alina Doschanova",
   "repository": {
     "type": "git",
-    "url": "https://github.com/epixx/start-kit"
+    "url": "https://github.com/AlinaDoschanova/dental-clinic"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.6",
