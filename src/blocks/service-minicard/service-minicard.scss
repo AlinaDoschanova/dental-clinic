@@ -7,6 +7,7 @@
   $block-name:                &; // #{$block-name}__element
 
   margin-bottom: 20px;
+  list-style-type: none;
 
   &:last-child {
     margin-bottom: none;
