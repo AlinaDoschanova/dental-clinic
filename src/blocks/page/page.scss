@@ -52,6 +52,10 @@ body {
   color: $text-color;
 }
 
+h1, h2, h3, h5, h6 {
+  font-family: $font-family--headers;
+}
+
 [tabindex='-1']:focus {
   outline: none !important; // stylelint-disable-line  declaration-no-important
 }
