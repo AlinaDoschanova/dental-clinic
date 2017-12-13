@@ -10,8 +10,16 @@
     font-size: $font-size--h2;
     text-transform: uppercase;
     font-weight: bold;
-    line-height: 22px;
+    line-height: $font-size--h2;
     margin: 0 0 30px 0;
+
+    @media (min-width: $screen-sm) {
+      font-size: $font-size--sm-headers;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size--lg-headers;
+    }
   }
 
   &__inner {
