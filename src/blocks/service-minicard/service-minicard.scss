@@ -6,42 +6,42 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  margin-bottom: 20px;
   position: relative;
+  display: block;
+  margin-bottom: 20px;
+  background-color: $main-color;
+  color: #fff;
+  font-weight: 700;
+  font-size: $font-size--service-minicard;
+  line-height: $font-size--service-minicard + 2;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: #fff;
+    text-decoration: none;
+  }
 
   @media (min-width: $screen-sm) {
     padding-top: 120px;
   }
 
-  @media (min-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     padding-top: 165px;
   }
 
   &:last-child {
-    margin-bottom: none;
-  }
-
-  &__link {
-    display: block;
-    padding: 13px 100px 13px 20px;
-    min-height: 64px;
-    background-color: $main-color;
-    color: #fff;
-    font-weight: 700;
-    font-size: $font-size--h2;
-    line-height: $font-size--h2 + 2;
-    text-decoration: none;
-
-    &:hover,
-    &:active {
-      color: #fff;
-      text-decoration: none;
-    }
+    margin-bottom: 0;
   }
 
   &__text {
     display: block;
-    max-width: 140px;
+    min-height: 63px;
+    padding: 13px 65px 13px 20px;
+
+    @media (min-width: $screen-lg) {
+      padding-right: 90px;
+    }
   }
 
   &__img {
@@ -59,7 +59,7 @@
       width: 220px;
     }
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
       display: block;
       height: 165px;
       width: 260px;

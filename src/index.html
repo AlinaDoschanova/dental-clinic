@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
+
+  <svg width="48" height="48">
+    <use xlink:href="img/sprite-svg.svg#loupe"/>
+  </svg>
 
   <header class="page-header">
     <div class="page-header__container">
@@ -78,35 +83,37 @@
 
   <div class="slider">
     <div class="slider__inner">
-      <section class="slider__item">
-        <h2 class="slider__title">Детский стоматолог</h2>
-        <div class="slider__dscr">
-          <p>Детские стоматологи сети клиник "Дентал" сделают всё, чтобы лечение ваших детей прошло комфортно и безболезненно</p>
-        </div>
-        <a href="" class="btn">Подробнее</a>
-        <img src="" alt="" class="slider__img">
-      </section>
-      <section class="slider__item">
-        <h2 class="slider__title">Установка брекетов</h2>
-        <div class="slider__dscr">
-          <p>Мы предоставляем полный спектр услуг по исправлению прикуса брекетами и гарантируем качественное лечение, независимо от возраста пациента или сложности каждого конкретного случая.</p>
-        </div>
-        <a href="" class="btn">Подробнее</a>
-        <img src="" alt="" class="slider__img">
-      </section>
-      <section class="slider__item">
-        <h2 class="slider__title">Безболезненное лечение</h2>
-        <div class="slider__dscr">
-          <p>Собственное отделение анестезиологии позволяет полностью избавить пациента от боли</p>
-        </div>
-        <a href="" class="btn">Подробнее</a>
-        <img src="" alt="" class="slider__img">
-      </section>
-      <div class="paginator">
+      <div class="owl-carousel" id="promo-slider">
+        <section class="slider__item">
+          <h2 class="slider__title">Детский стоматолог</h2>
+          <div class="slider__dscr">
+            <p>Детские стоматологи сети клиник "Дентал" сделают всё, чтобы лечение ваших детей прошло комфортно и безболезненно</p>
+          </div>
+          <a href="" class="btn">Подробнее</a>
+          <img src="" alt="" class="slider__img">
+        </section>
+        <section class="slider__item">
+          <h2 class="slider__title">Установка брекетов</h2>
+          <div class="slider__dscr">
+            <p>Мы предоставляем полный спектр услуг по исправлению прикуса брекетами и гарантируем качественное лечение, независимо от возраста пациента или сложности каждого конкретного случая.</p>
+          </div>
+          <a href="" class="btn">Подробнее</a>
+          <img src="" alt="" class="slider__img">
+        </section>
+        <section class="slider__item">
+          <h2 class="slider__title">Безболезненное лечение</h2>
+          <div class="slider__dscr">
+            <p>Собственное отделение анестезиологии позволяет полностью избавить пациента от боли</p>
+          </div>
+          <a href="" class="btn">Подробнее</a>
+          <img src="" alt="" class="slider__img">
+        </section>
+      </div>
+      <!-- <div class="paginator">
         <span class="btn-paginator btn-paginator--active"></span>
         <span class="btn-paginator"></span>
         <span class="btn-paginator"></span>
-      </div>
+      </div>-->
     </div>
   </div>
 
@@ -114,62 +121,62 @@
     <div class="services__inner">
       <h2 class="services__title">Услуги</h2>
       <ul class="services__list">
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/implantation.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Имплантация</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item" id="candelete">
+          <a href="" class="service-minicard">
             <img src="img/bite-correction.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Исправление прикуса</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/childrens-dentist.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Детский стоматолог</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/therapy.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Терапия</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/surgery.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Хирургия</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/laser-surgery.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Лазерная хирургия</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/fixed-prosthesis.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Несъёмное протезирование</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/removable-prosthesis.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Съёмное протезирование</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/periodontology.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Парадонтология</span>
           </a>
         </li>
-        <li class="service-minicard">
-          <a href="" class="service-minicard__link">
+        <li class="services__item">
+          <a href="" class="service-minicard">
             <img src="img/anesthesia.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Анестезия</span>
           </a>
@@ -196,11 +203,11 @@
   <section class="promotions">
     <div class="promotions__inner">
       <h2 class="promotions__title">Действующие акции</h2>
-      <ul class="promotions__list">
+      <ul class="promotions__list  owl-carousel" id="promotions-slider">
         <li class="promotions__list-item  promotion">
           <a href="" class="promotion__link">
             <img src="" alt="" class="promotion__img">
-            <h3 class="promotion__title">Скидка на 50% на биочистку/h3>
+            <h3 class="promotion__title">Скидка на 50% на биочистку</h3>
             <div class="promotion__text">
               <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные.</p>
             </div>
@@ -252,36 +259,38 @@
       <h2 class="reviews__title">Нас рекомендуют друзьям</h2>
       <div class="reviews__slider  slider">
         <div class="slider__inner">
-          <blockquote class="review  slider__item">
-            <div class="review__text">
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни своего по всей, продолжил предупреждал ты. По всей рот, текста маленький он одна грустный дал ручеек, свое дорогу меня свой имеет.</p>
-            </div>
-            <footer class="review__author">
-              <img src="" alt="" class="review__author-photo">
-              <b class="review__author-name">Юлия</b>
-              <time class="review__time">12.12.2017</time>
-            </footer>
-          </blockquote>
-          <blockquote class="review  slider__item">
-            <div class="review__text">
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни своего по всей, продолжил предупреждал ты. По всей рот, текста маленький он одна грустный дал ручеек, свое дорогу меня свой имеет.</p>
-            </div>
-            <footer class="review__author">
-              <img src="" alt="" class="review__author-photo">
-              <b class="review__author-name">Юлия</b>
-              <time class="review__time">12.12.2017</time>
-            </footer>
-          </blockquote>
-          <blockquote class="review  slider__item">
-            <div class="review__text">
-              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни своего по всей, продолжил предупреждал ты. По всей рот, текста маленький он одна грустный дал ручеек, свое дорогу меня свой имеет.</p>
-            </div>
-            <footer class="review__author">
-              <img src="" alt="" class="review__author-photo">
-              <b class="review__author-name">Юлия</b>
-              <time class="review__time">12.12.2017</time>
-            </footer>
-          </blockquote>
+          <div class="owl-carousel" id="review-slider">
+            <blockquote class="review  slider__item">
+              <div class="review__text">
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни своего по всей, продолжил предупреждал ты. По всей рот, текста маленький он одна грустный дал ручеек, свое дорогу меня свой имеет.</p>
+              </div>
+              <footer class="review__author">
+                <img src="" alt="" class="review__author-photo">
+                <b class="review__author-name">Юлия</b>
+                <time class="review__time">12.12.2017</time>
+              </footer>
+            </blockquote>
+            <blockquote class="review  slider__item">
+              <div class="review__text">
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни своего по всей, продолжил предупреждал ты. По всей рот, текста маленький он одна грустный дал ручеек, свое дорогу меня свой имеет.</p>
+              </div>
+              <footer class="review__author">
+                <img src="" alt="" class="review__author-photo">
+                <b class="review__author-name">Юлия</b>
+                <time class="review__time">12.12.2017</time>
+              </footer>
+            </blockquote>
+            <blockquote class="review  slider__item">
+              <div class="review__text">
+                <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Деревни своего по всей, продолжил предупреждал ты. По всей рот, текста маленький он одна грустный дал ручеек, свое дорогу меня свой имеет.</p>
+              </div>
+              <footer class="review__author">
+                <img src="" alt="" class="review__author-photo">
+                <b class="review__author-name">Юлия</b>
+                <time class="review__time">12.12.2017</time>
+              </footer>
+            </blockquote>
+          </div>
         </div>
         <div class="slider__controls">
           <span class="slider__btn-prev"></span>
@@ -433,5 +442,6 @@
     </div>
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 </html>
