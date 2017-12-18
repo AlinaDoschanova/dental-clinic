@@ -1,0 +1,90 @@
+// В этом файле должны быть стили для БЭМ-блока about, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.about {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-top: 35px;
+  padding-bottom: 0;
+  background-color: #E8F4F9;
+
+  @media (min-width: $screen-md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  &__inner {
+    padding: 0px 20px 0 20px;
+    overflow: auto;
+
+    @media (min-width: $screen-sm) {
+      width: 748px;
+      margin: auto;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 1180px;
+      padding-left: 22px;
+      padding-right: 22px;
+      overflow: visible;
+}
+  }
+
+  &__title {
+    font-size: $font-size--h2;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: $font-size--h2+4;
+    margin: 0 0 35px 0;
+
+    @media (min-width: $screen-sm) {
+      font-size: $font-size--sm-headers;
+      line-height: $font-size--h2;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size--lg-headers;
+      line-height: $font-size--h2;
+    }
+  }
+
+  &__img {
+    float: right;
+    margin-bottom: 30px;
+    width: 280px;
+
+    @media (min-width: $screen-sm) {
+      width: 300px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 375px;
+      margin-bottom: 0;
+      position: relative;
+      top: -55px;
+    }
+  }
+
+  .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+  }
+
+  &__text {
+
+  }
+  p {
+    margin: 0 0 30px 0;
+  }
+
+}
