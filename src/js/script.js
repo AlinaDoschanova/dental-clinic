@@ -41,6 +41,13 @@ $(document).ready(function(){
     }
   }
 
+  // Функциональность списка услуг в сайдбаре
+  $('.services-sidebar__item:not(.services-sidebar__item--active) .services-sidebar__lvl-2').hide();
+  $('.services-sidebar__lvl-2').closest('.services-sidebar__item:not(.services-sidebar__item--active)').find('.services-sidebar__link').on('click', function(e){
+    e.preventDefault();
+    $(this).closest('.services-sidebar__item').find('.services-sidebar__lvl-2').slideToggle();0
+  });
+
 });
 
 // Если на проекте нет jQuery, но хочется $( document ).ready... (IE9+)

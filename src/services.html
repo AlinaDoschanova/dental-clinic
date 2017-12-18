@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html class="page no-js" lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+  </script>
 </head>
 <body>
 
@@ -91,10 +94,10 @@
     <div class="content-wrap__sidebar">
       <div class="services-sidebar">
         <div class="services-sidebar__title">Наши услуги</div>
-        <ul class="services-sidebar__list">
+        <ul class="services-sidebar__list" id="services-sidebar-list">
           <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Имплантация</a></li>
           <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Исправление прикуса</a></li>
-          <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Детский стоматолог</a>
+          <li class="services-sidebar__item  services-sidebar__item--active"><a href="" class="services-sidebar__link">Детский стоматолог</a>
             <ul class="services-sidebar__lvl-2">
               <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Кариес</a></li>
               <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Пульпит</a></li>
@@ -106,8 +109,20 @@
               <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Уроки гигиены</a></li>
             </ul>
           </li>
-          <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Терапия</a></li>
-          <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Хирургия</a></li>
+          <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Терапия</a>
+            <ul class="services-sidebar__lvl-2">
+              <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Подпункт</a></li>
+              <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Подпункт</a></li>
+              <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Подпункт</a></li>
+            </ul>
+          </li>
+          <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Хирургия</a>
+            <ul class="services-sidebar__lvl-2">
+              <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Подпункт</a></li>
+              <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Подпункт</a></li>
+              <li class="services-sidebar__item-lvl-2"><a href="" class="services-sidebar__link">Подпункт</a></li>
+            </ul>
+          </li>
           <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Лазерная хирургия</a></li>
           <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Несъемное протезирование</a></li>
           <li class="services-sidebar__item"><a href="" class="services-sidebar__link">Съемное протезирование</a></li>
