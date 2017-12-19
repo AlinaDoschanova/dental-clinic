@@ -9,7 +9,7 @@
 <body>
 
   <header class="page-header">
-    <div class="page-header__container">
+    <div class="page-header__inner">
       <div class="page-header__main-line">
         <div class="page-header__logo-wrap">
           <a href="" class="logo"><img src="" alt=""></a>
@@ -19,21 +19,37 @@
           </button>
         </div>
         <ul class="page-header__addresses  addresses">
-          <li>
-            <span class="addresses__city">Новый Уренгой</span>
-            <span class="addresses__street">ул. Ленина, дом 3</span>
+          <li class="addresses__item-left">
+            <!-- <svg> -->
+              <!-- <use xlink:href="img/sprite-svg.svg#place"/> -->
+            <!-- </svg> -->
+            <span class="addresses__city">г. Новый Уренгой</span><br>
+            <span class="addresses__street">ул. Ленина, дом 3</span><br>
             <a href="tel:+70000000000" class="adresses__phone">+7 000 000 0000</a>
           </li>
-          <li>
-            <span class="addresses__city">Улан-Удэ</span>
-            <span class="addresses__street">пр. Строителей, дом 99</span>
+          <li class="addresses__item-right">
+            <!-- <svg> -->
+              <!-- <use xlink:href="img/sprite-svg.svg#place"/> -->
+            <!-- </svg> -->
+            <span class="addresses__city">г. Улан-Удэ</span><br>
+            <span class="addresses__street">пр. Строителей, дом 99</span><br>
             <a href="tel:+70000000000" class="addresses__phone">+7 000 000 0000</a>
           </li>
         </ul>
-        <a href="#modal-call" class="btn  page-header__btn">Обратный звонок</a>
+        <div class="btn-wrap">
+          <a href="#modal-call" class="btn-wrap__btn  page-header__btn">
+            <span class="btn__text">Обратный звонок</span>
+          </a>
+        </div>
       </div>
       <div class="page-header__second-line">
+        <!-- <svg width="13" height="13"> -->
+              <!-- <use xlink:href="img/sprite-svg.svg#time"/> -->
+        <!-- </svg> -->
         <div class="page-header__opened">Ежедневно: 10:00-21:00</div>
+        <!-- <svg> -->
+              <!-- <use xlink:href="img/sprite-svg.svg#e-mail"/> -->
+        <!-- </svg> -->
         <a href="mailto:email@host.com" class="page-header__email">email@host.com</a>
       </div>
     </div>
@@ -121,15 +137,18 @@
           <a href="" class="service-minicard">
             <img src="img/implantation.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Имплантация</span>
-            <svg width="48" height="48">
-              <use xlink:href="img/sprite-svg.svg#loupe"/>
-            </svg>
+            <!-- <svg width="48" height="48"> -->
+              <!-- <use xlink:href="img/sprite-svg.svg#right-arrow"/> -->
+            <!-- </svg> -->
           </a>
         </li>
         <li class="services__item" id="candelete">
           <a href="" class="service-minicard">
             <img src="img/bite-correction.png" alt="" class="service-minicard__img">
             <span class="service-minicard__text">Исправление прикуса</span>
+            <!-- <svg width="48" height="48"> -->
+              <!-- <use xlink:href="img/sprite-svg.svg#right-arrow"/> -->
+            <!-- </svg> -->
           </a>
         </li>
         <li class="services__item">
