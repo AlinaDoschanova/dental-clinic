@@ -6,13 +6,60 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  &__main-line {}
+  &__container {
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__main-line {
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+    }
+  }
 
   &__second-line {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+  }
+
+  &__addresses {
     display: none;
 
     @media (min-width: $screen-sm) {
       display: block;
     }
   }
+
+  &__btn {
+    display: none;
+  }
+
+  &__logo-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid $main-color--lighten;
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-sm) {
+      border-bottom: none;
+      margin-bottom: 0;
+      margin-right: auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+
 }

@@ -6,8 +6,8 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  padding-top: 35px;
-  padding-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
   background-color: #E8F4F9;
 
   @media (min-width: $screen-md) {
@@ -48,29 +48,33 @@
 
     @media (min-width: $screen-sm) {
       font-size: $font-size--sm-headers;
-      line-height: $font-size--h2;
+      line-height: 1em;
     }
 
     @media (min-width: $screen-lg) {
       font-size: $font-size--lg-headers;
-      line-height: $font-size--h2;
+      max-width: 780px;
     }
   }
 
   &__img {
-    float: right;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
     width: 280px;
+    display: block;
 
     @media (min-width: $screen-sm) {
       width: 300px;
+      float: right;
+      margin-left: 2em;
     }
 
     @media (min-width: $screen-lg) {
       width: 375px;
       margin-bottom: 0;
-      position: relative;
-      top: -55px;
+      margin-top: -55px;
+      float: right;
     }
   }
 

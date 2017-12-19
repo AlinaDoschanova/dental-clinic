@@ -1,9 +1,84 @@
-// В этом файле должны быть стили для БЭМ-блока burger, его элементов, 
+// В этом файле должны быть стили для БЭМ-блока burger, его элементов,
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$toggler-part-height:         3px !default;
+$toggler-part-bg-color:       #000 !default;
 
 .burger {
 
   $block-name:                &; // #{$block-name}__element
 
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0;
+  width: 30px;
+  line-height: 30px;
+  background: transparent;
+  border: none;
+  user-select: none;
+  cursor: pointer;
+
+  &__text {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  &__icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: $toggler-part-height;
+    font-size: 0;
+    color: transparent;
+    background: $toggler-part-bg-color;
+    transition: background 0.3s 0.3s;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $toggler-part-height;
+      background: $toggler-part-bg-color;
+      transform-origin: 50% 50%;
+      transition: top 0.3s 0.3s, transform 0.3s;
+    }
+
+    &:before {
+      top: -10px;
+    }
+
+    &:after {
+      top: 10px;
+    }
+  }
+
+  &--close {
+
+    &__icon {
+      transition: background 0.3s 0s;
+      background: transparent;
+
+      &:before,
+      &:after {
+        transition: top 0.3s, transform 0.3s 0.3s;
+        top: 0;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
 }
