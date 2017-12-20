@@ -20,6 +20,13 @@ $toggler-part-bg-color:       #000 !default;
   user-select: none;
   cursor: pointer;
 
+  @media (min-width: $screen-sm) {
+    margin-left: 20px;
+    margin-top: 2px;
+    width: 40px;
+    height: 30px;
+}
+
   &__text {
     position: absolute;
     width: 0;

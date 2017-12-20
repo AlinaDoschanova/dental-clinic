@@ -152,4 +152,18 @@
       display: none;
     }
 }
+
+  &__logo-wrap-im {
+
+    @media (min-width: $screen-sm) {
+      width: 177px;
+      height: 55px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 200px;
+      height: 60px;
+      margin-top: -5px;
+    }
+  }
 }

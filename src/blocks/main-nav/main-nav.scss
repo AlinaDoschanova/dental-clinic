@@ -11,18 +11,65 @@
   font-size: $font-size;
   line-height: $font-size + 12;
 
+  &__inner {
+    padding-right: 22px;
+    padding-left: 22px;
+    margin-left: 130px;
+    margin-right: 130px;
+  }
+
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      background-color: $main-color;
+    }
+
   }
 
-  &__item {}
+  &__list-lvl-2 {
+    list-style: none;
+    position: absolute;
+    background-color: $main-color;
+    display: none;
+  }
+
+  &__list-lvl-3 {
+    list-style: none;
+    position: absolute;
+    display: none;
+  }
+
+  #{$block-name}__item--active {
+
+    @media (min-width: $screen-lg) {
+    width: 140px;
+    position: relative;
+    }
+
+    &__list-lvl-2 {
+    display: none;
+    }
+
+  }
+
+  &__item {
+
+    @media (min-width: $screen-lg) {
+      display: block;
+
+    }
+
+  }
 
   &__link {
     display: block;
     padding: 7px 20px;
-    color: #000;
+    color: #fff;
+    text-decoration: none;
 
     #{$block-name}__item--active > & {
       background-color: $main-color--lighten;
