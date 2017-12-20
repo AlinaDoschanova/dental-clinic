@@ -68,6 +68,11 @@ let jsList = [
   dirs.source + '/js/script.js',
 ];
 
+// Список копируемых js-файлов
+let jsListCopy = [
+  './node_modules/picturefill/dist/picturefill.min.js',
+];
+
 // Компиляция и обработка стилей
 gulp.task('style', function () {
   return gulp.src(dirs.source + '/scss/style.scss')        // какой файл компилировать
@@ -214,6 +219,19 @@ gulp.task('clean', function () {
   ]);
 });
 
+// Копирование Javascript
+gulp.task('js:copy', function () {
+  if(jsListCopy.length) {
+    return gulp.src(jsListCopy)
+      .pipe(plumber({ errorHandler: onError }))             // не останавливаем автоматику при ошибках
+      .pipe(gulp.dest(dirs.build + '/js'));                 // записываем
+  }
+  else {
+    console.log('Javascript не обрабатывается');
+    callback();
+  }
+});
+
 // Конкатенация и углификация Javascript
 gulp.task('js', function () {
   if(jsList.length) {
@@ -234,7 +252,7 @@ gulp.task('build', function (callback) {
   gulpSequence(
     'clean',
     ['sprite:svg', 'sprite:png'],
-    ['style', 'js', 'copy:img', 'copy:fonts'],
+    ['style', 'js', 'js:copy', 'copy:img', 'copy:fonts'],
     'html',
     'pug',
     callback

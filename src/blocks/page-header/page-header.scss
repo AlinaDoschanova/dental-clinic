@@ -50,6 +50,12 @@
 
   &__opened {
     color: $gray;
+
+    svg {
+      display: inline-block;
+      vertical-align: 0.1em;
+      fill: $main-color;
+    }
   }
 
   &__addresses {
@@ -84,6 +90,11 @@
 
   &__email {
     color: $gray;
+    text-decoration: none;
+  }
+
+  &__email-text {
+    text-decoration: underline;
   }
 
 

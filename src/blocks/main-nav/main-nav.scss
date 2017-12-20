@@ -6,8 +6,26 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  background: #ff0;
-  padding: 1em;
-  font-size: 20px;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: $font-size;
+  line-height: $font-size + 12;
 
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {}
+
+  &__link {
+    display: block;
+    padding: 7px 20px;
+    color: #000;
+
+    #{$block-name}__item--active > & {
+      background-color: $main-color--lighten;
+    }
+  }
 }
