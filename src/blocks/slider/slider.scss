@@ -1,0 +1,62 @@
+// В этом файле должны быть стили для БЭМ-блока slider, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.slider {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-lg) {
+    height: 400px; /*надо убрать скорее всего*/
+    background-color: #69C3E9;
+    color: #fff;
+
+    &__inner {
+      margin-left: 164px;
+      margin-right: 0;
+      height: 100%;
+    }
+
+    &__item-first {
+      position: relative;
+      height: 400px;
+      background-image: url(../img/little-smiling-child-boy.png);
+      background-size: cover;
+    }
+
+
+    &__item-second {
+      position: relative;
+      height: 400px;
+      background-image: url(../img/little-smiling-child-boy.png);
+      background-size: cover;
+    }
+
+   &__item-third {
+      position: relative;
+      height: 400px;
+      background-image: url(../img/little-smiling-child-boy.png);
+      background-size: cover;
+    }
+
+
+
+    &__carousel {
+      height: 100%;
+    }
+
+    &__dscr {
+
+    }
+
+    &__title {
+      font-size: 48px;
+      margin-top: 57px;
+      margin-bottom: 42px;
+      text-transform: uppercase;
+    }
+
+
+
+  }
+}

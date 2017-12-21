@@ -19,10 +19,7 @@
     @media (min-width: $screen-lg) {
       display: flex;
       flex-direction: column-reverse;
-      padding-right: 22px;
-      padding-left: 22px;
-      margin-left: 130px;
-      margin-right: 130px;
+      width: 1140px;
 
 
     }
@@ -53,7 +50,8 @@
 
     svg {
       display: inline-block;
-      vertical-align: 0.1em;
+      vertical-align: -0.05em;
+      margin-right: 5px;
       fill: $main-color;
     }
   }
@@ -83,7 +81,24 @@
     }
 
     &__item-left {
-      padding-right: 60px;
+      position: relative;
+      padding-right: 37px;
+      padding-left: 23px;
+
+      svg {
+        position: absolute;
+        left: 0;
+      }
+    }
+
+    &__item-right {
+      position: relative;
+      padding-left: 23px;
+
+      svg {
+        position: absolute;
+        left: 0;
+      }
     }
 
   }
@@ -91,6 +106,12 @@
   &__email {
     color: $gray;
     text-decoration: none;
+
+    svg {
+      display: inline-block;
+      vertical-align: -0.15em;
+      margin-right: 5px;
+    }
   }
 
   &__email-text {
