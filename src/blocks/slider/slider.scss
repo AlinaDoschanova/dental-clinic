@@ -6,57 +6,81 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  @media (min-width: $screen-lg) {
-    height: 400px; /*надо убрать скорее всего*/
-    background-color: #69C3E9;
+  display: none;
+
+  .owl-nav {
+    display: none;
+  }
+
+  @media (min-width: $screen-sm) {
+    display: block;
+    background-color: $main-color--light;
     color: #fff;
 
-    &__inner {
-      margin-left: 164px;
-      margin-right: 0;
-      height: 100%;
-    }
-
-    &__item-first {
+    &__item-inner {
+      min-height: 354px;
       position: relative;
-      height: 400px;
-      background-image: url(../img/little-smiling-child-boy.png);
-      background-size: cover;
+      width: 720px;
+      margin: auto;
+      padding-right: 280px;
+      padding-bottom: 0;
     }
 
-
-    &__item-second {
-      position: relative;
-      height: 400px;
-      background-image: url(../img/little-smiling-child-boy.png);
-      background-size: cover;
+    &__title {
+      font-size: 38px;
+      text-transform: uppercase;
+      padding-top: 43px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      white-space: nowrap;
     }
 
-   &__item-third {
-      position: relative;
-      height: 400px;
-      background-image: url(../img/little-smiling-child-boy.png);
-      background-size: cover;
+    &__descr {
+      font-size: $font-size+2;
+      color: #B0DDF2;
+      letter-spacing: 1px;
     }
 
+    &__img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      max-width: none;
 
-
-    &__carousel {
-      height: 100%;
+      &--boy {
+        height: auto;
+        width: auto !important;
+        right: -62px;
+        bottom: -45px;
+      }
     }
+  }
 
-    &__dscr {
+  @media (min-width: $screen-lg) {
 
+    &__item-inner {
+      min-height: 400px;
+      width: 1136px;
+      padding-right: 570px;
+      padding-bottom: 0;
     }
 
     &__title {
       font-size: 48px;
-      margin-top: 57px;
+      line-height: 57px;
       margin-bottom: 42px;
-      text-transform: uppercase;
+      padding-top: 48px;
     }
 
+    &__img {
 
+      &--boy {
+        right: -70px;
+        bottom: 0;
+      }
+
+    }
 
   }
 }
