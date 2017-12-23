@@ -17,6 +17,37 @@
     background-color: $main-color--light;
     color: #fff;
 
+    .owl-dots {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      transform: translateX(-360px);
+    }
+
+    .owl-dot {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 12px;
+      height: 12px;
+      margin-right: 7px;
+
+      span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #fff;
+      }
+
+      &.active span{
+        width: 12px;
+        height: 12px;
+        background-color: $main-color;
+        border: none;
+      }
+    }
+
     &__item-inner {
       min-height: 354px;
       position: relative;
@@ -37,8 +68,9 @@
 
     &__descr {
       font-size: $font-size+2;
-      color: #B0DDF2;
       letter-spacing: 1px;
+      max-width: 380px;
+      color: #B0DDF2;
     }
 
     &__img {
@@ -51,7 +83,7 @@
       &--boy {
         height: auto;
         width: auto !important;
-        right: -62px;
+        right: -150px;
         bottom: -45px;
       }
     }

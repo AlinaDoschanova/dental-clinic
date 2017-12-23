@@ -15,6 +15,13 @@
   &__inner {
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 720px;
+      margin: auto;
+    }
   }
 
   &__title {
@@ -28,12 +35,24 @@
     width: 271px;
   }
 
-    @media (min-width: $screen-sm) {
+  @media (min-width: $screen-sm) {
 
-      &__list {
+    &__list {
       display: block;
-      }
-
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
+
+    &__list-item {
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      margin-top: 56px;
+      margin-bottom: 30px;
+    }
+
+  }
 
 }

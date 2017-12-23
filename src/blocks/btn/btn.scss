@@ -5,7 +5,8 @@
 .btn {
 
   $block-name:                &; // #{$block-name}__element
-
+  position: absolute;
+  bottom: 73px;
   display: inline-block;
   padding: 20px 23px;
   background-color: $main-color;
