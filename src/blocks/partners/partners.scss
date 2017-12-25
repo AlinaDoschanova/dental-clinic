@@ -1,0 +1,53 @@
+// В этом файле должны быть стили для БЭМ-блока partners, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.partners {
+
+  $block-name:                &; // #{$block-name}__element
+
+  @media (min-width: $screen-lg) {
+
+  height: 100px;
+  background-color: $main-color;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+    &__inner {
+      display: flex;
+      justify-content: center;
+      width: 1140px;
+      height: 100%;
+      margin: auto;
+    }
+
+    &__title {
+      font-size: $font-size--h2+4;
+      text-transform: uppercase;
+      margin-top: 17px;
+      margin-right: 69px;
+      color: #fff;
+    }
+
+    &__item {
+      border: 2px solid #fff;
+      vertical-align: middle;
+
+      &--vtb {
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-left: 22px;
+        padding-right: 21px;
+        margin-right: 20px;
+      }
+
+      &--sogaz {
+        padding-top: 8px;
+        padding-bottom: 9px;
+        padding-left: 31px;
+        padding-right: 34px;
+      }
+    }
+  }
+
+}

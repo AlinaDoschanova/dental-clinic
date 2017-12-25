@@ -42,4 +42,15 @@
       object-fit: cover;
     }
   }
+
+  @media (min-width: $screen-lg) {
+    width: 260px;
+    height: 367px;
+
+    &__text {
+      margin-left: 0;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+  }
 }

@@ -15,13 +15,6 @@
   &__inner {
     padding-left: 20px;
     padding-right: 20px;
-
-    @media (min-width: $screen-sm) {
-      padding-left: 0;
-      padding-right: 0;
-      width: 720px;
-      margin: auto;
-    }
   }
 
   &__title {
@@ -36,6 +29,13 @@
   }
 
   @media (min-width: $screen-sm) {
+
+    &__inner {
+      padding-left: 0;
+      padding-right: 0;
+      width: 720px;
+      margin: auto;
+    }
 
     &__list {
       display: block;
@@ -53,6 +53,32 @@
       margin-bottom: 30px;
     }
 
+  }
+
+  @media (min-width: $screen-lg) {
+
+    &__inner {
+      padding-left: 0;
+      padding-right: 0;
+      width: 1140px;
+      margin: auto;
+    }
+
+    &__list {
+      justify-content: flex-start;
+
+      :last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__list-item {
+      margin-right: 32px;
+    }
+
+    &__title {
+      margin-top: 80px;
+    }
   }
 
 }
