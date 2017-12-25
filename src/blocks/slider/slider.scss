@@ -14,8 +14,13 @@
 
   @media (min-width: $screen-sm) {
     display: block;
+    height: 354px;
     background-color: $main-color--light;
     color: #fff;
+
+    .owl-stage-outer {
+      height: 354px;
+    }
 
     .owl-dots {
       display: flex;
@@ -70,7 +75,8 @@
       font-size: $font-size+2;
       letter-spacing: 1px;
       max-width: 380px;
-      color: #B0DDF2;
+      // color: #B0DDF2;
+      color: #dcf0f9;
     }
 
     &__img {
@@ -86,10 +92,29 @@
         right: -150px;
         bottom: -45px;
       }
+
+      &--laughing-woman-mouth {
+        height: auto;
+        width: auto !important;
+        right: -100px;
+        bottom: 0;
+      }
+
+      &--dentist {
+       height: auto;
+       width: auto !important;
+       right: -100px;
+      }
     }
   }
 
   @media (min-width: $screen-lg) {
+
+    height: 400px;
+
+    .owl-stage-outer {
+      height: 400px;
+    }
 
     &__item-inner {
       min-height: 400px;
@@ -101,8 +126,8 @@
     &__title {
       font-size: 48px;
       line-height: 57px;
-      margin-bottom: 42px;
-      padding-top: 48px;
+      margin-bottom: 38px;
+      padding-top: 44px;
     }
 
     &__img {
@@ -112,6 +137,27 @@
         bottom: 0;
       }
 
+      &--laughing-woman-mouth {
+        right: -183px;
+        height: auto;
+        width: auto !important;
+      }
+
+      &--dentist {
+       right: -100px;
+       height: auto;
+       width: auto !important;
+      }
+
+    }
+
+    .owl-dots {
+      transform: translateX(-568px);
+      bottom: 73px;
+    }
+
+    &__descr {
+      max-width: 680px;
     }
 
   }
