@@ -72,7 +72,7 @@
     }
 
     &__descr {
-      font-size: $font-size+2;
+      font-size: $font-size + 2;
       letter-spacing: 1px;
       max-width: 380px;
       // color: #B0DDF2;
@@ -85,6 +85,15 @@
       right: 0;
       z-index: -1;
       max-width: none;
+
+      .owl-item & {
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .owl-item.active & {
+        opacity: 1;
+      }
 
       &--boy {
         height: auto;
