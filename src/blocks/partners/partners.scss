@@ -6,10 +6,82 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  background-color: $main-color;
+  height: 280px;
+
+  &__inner {
+    width: 220px;
+    margin: auto;
+  }
+
+  &__title {
+    font-size: $font-size--h2;
+    line-height: 22px;
+    padding-top: 26px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+    &__item {
+      border: 2px solid #fff;
+      vertical-align: middle;
+      margin-bottom: 30px;
+
+      &--vtb {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 20px;
+        padding-right: 19px;
+      }
+
+      &--sogaz {
+        padding-top: 6px;
+        padding-bottom: 7px;
+        padding-left: 30px;
+        padding-right: 32px;
+        margin-left: 15px;
+      }
+    }
+
+  @media (min-width: $screen-sm) {
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    &__inner {
+      display: flex;
+      justify-content: center;
+      width: 720px;
+      height: 100%;
+      margin: auto;
+    }
+
+    &__title {
+      font-size: $font-size--h2+2;
+      line-height: $font-size--h2+2;;
+      margin-right: 68px;
+      margin-top: 23px;
+      padding-top: 0;
+    }
+
+    &__item {
+
+      &--vtb {
+        margin-right: 18px;
+      }
+
+        &--sogaz {
+          margin-left: 0;
+      }
+    }
+
+  }
+
   @media (min-width: $screen-lg) {
 
   height: 100px;
-  background-color: $main-color;
   padding-top: 15px;
   padding-bottom: 15px;
 
@@ -23,31 +95,24 @@
 
     &__title {
       font-size: $font-size--h2+4;
-      text-transform: uppercase;
+      line-height: 37.154px;
       margin-top: 17px;
       margin-right: 69px;
-      color: #fff;
+      padding-top: 0;
     }
 
     &__item {
-      border: 2px solid #fff;
-      vertical-align: middle;
-
+      margin-bottom: 0;
       &--vtb {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        padding-left: 20px;
-        padding-right: 19px;
         margin-right: 20px;
       }
 
       &--sogaz {
-        padding-top: 6px;
-        padding-bottom: 7px;
-        padding-left: 30px;
-        padding-right: 32px;
-      }
+        margin-left: 0;
     }
+
+    }
+
   }
 
 }
