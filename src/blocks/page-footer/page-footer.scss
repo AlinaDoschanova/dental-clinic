@@ -1,0 +1,123 @@
+// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.page-footer {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background-color: $main-color;
+
+  &__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__about-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    width: 180px;
+  }
+
+  &__services-list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    width: 180px;
+  }
+
+  &__item a {
+    text-decoration: none;
+    color: $text-color-light;
+  }
+
+  &__item a:hover {
+    text-decoration: underline;
+  }
+
+  &__title {
+    font-size: $font-size + 4;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 26px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid $text-color-light;
+    margin-top: 0;
+  }
+
+  &__phone {
+    font-size: $font-size--h2;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__contacts-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  &__address {
+    color: #fff;
+  }
+
+  &__opened {
+    color: #fff;
+  }
+
+  &__license {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 7px 13px;
+  }
+
+  @media (min-width: $screen-sm) {
+
+  padding-top: 44px;
+
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0;
+      width: 720px;
+      margin: auto;
+    }
+
+    &__about {
+      margin-right: 60px;
+      width: 158px;
+    }
+
+    &__services {
+      width: 502px;
+    }
+
+    &__contacts {
+      width: 720px;
+    }
+
+    &__title {
+      padding-top: 10px;
+    }
+
+    &__last-block {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      border-top: 1px solid #fff;
+      text-align: center;
+      color: $text-color-light;
+    }
+
+    &__copyright {
+      padding-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+
+  }
+
+}

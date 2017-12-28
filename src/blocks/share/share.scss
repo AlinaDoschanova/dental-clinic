@@ -1,0 +1,14 @@
+// В этом файле должны быть стили для БЭМ-блока share, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.share {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    font-size: $font-size + 4;
+    text-transform: uppercase;
+    color: #fff;
+  }
+}

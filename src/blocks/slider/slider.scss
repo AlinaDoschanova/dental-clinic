@@ -54,12 +54,15 @@
     }
 
     &__item-inner {
-      min-height: 354px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      height: 354px;
       position: relative;
       width: 720px;
       margin: auto;
       padding-right: 280px;
-      padding-bottom: 0;
+      padding-bottom: 90px;
     }
 
     &__title {
@@ -72,11 +75,10 @@
     }
 
     &__descr {
-      font-size: $font-size + 2;
-      letter-spacing: 1px;
+      letter-spacing: 0.06em;
       max-width: 380px;
-      // color: #B0DDF2;
-      color: #dcf0f9;
+      margin-bottom: auto;
+      color: $text-color-light;
     }
 
     &__img {
@@ -85,6 +87,8 @@
       right: 0;
       z-index: -1;
       max-width: none;
+      width: auto !important;
+      height: 354px;
 
       .owl-item & {
         opacity: 0;
@@ -96,22 +100,17 @@
       }
 
       &--boy {
-        height: auto;
-        width: auto !important;
         right: -150px;
         bottom: -45px;
       }
 
       &--laughing-woman-mouth {
-        height: auto;
-        width: auto !important;
+        height: 354px;
         right: -100px;
         bottom: 0;
       }
 
       &--dentist {
-       height: auto;
-       width: auto !important;
        right: -100px;
       }
     }

@@ -119,13 +119,13 @@
   }
 
 
-  .btn-wrap {
+  &__btn-wrap {
 
     margin-top: 25px;
     margin-bottom: 33px;
     margin-left: 80px;
 
-    &__btn {
+    .btn {
       display: none;
 
       @media (min-width: $screen-lg) {
@@ -139,10 +139,6 @@
         font-size: $font-size;
         line-height: $font-size+2;
         text-align: center;
-      }
-
-      &__text {
-
       }
     }
   }

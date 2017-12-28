@@ -66,14 +66,13 @@
 
     &__list {
       justify-content: flex-start;
-
-      :last-child {
-        margin-right: 0;
-      }
+      margin-right: -12px;
+      margin-left: -12px;
     }
 
     &__list-item {
-      margin-right: 32px;
+      margin-right: 12px;
+      margin-left: 12px;
     }
 
     &__title {

@@ -24,8 +24,13 @@
   }
 
   @media (min-width: $screen-sm) {
-
     width: auto;
+
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
 
     &__img {
       float: left;
