@@ -8,9 +8,35 @@
 
   width: 280px;
 
+  @media (min-width: $screen-sm) {
+    width: auto;
+
+    &:after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+  }
+
+  @media (min-width: $screen-lg) {
+    width: 263px;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
   &__img {
     width: 100%;
     height: auto;
+
+    @media (min-width: $screen-sm) {
+      float: left;
+      width: 252px;
+      height: 160px;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 263px;
+    }
   }
 
   &__text {
@@ -21,46 +47,23 @@
     display: block;
     margin-bottom: 37px;
     color: $link-color;
-  }
 
-  @media (min-width: $screen-sm) {
-    width: auto;
-
-    &:after {
-      content: '';
-      clear: both;
-      display: table;
-    }
-
-    &__img {
-      float: left;
-      width: 252px;
-      height: 160px;
-    }
-
-    &__descr {
-      padding-left: 282px;
-      width: 720px;
-    }
-
-    &__more-link {
+    @media (min-width: $screen-sm) {
       margin-bottom: 34px;
     }
   }
 
-  @media (min-width: $screen-lg) {
+  &__descr {
 
-    width: 263px;
-    height: 100%;
-    margin-bottom: 40px;
-
-    &__img {
-      width: 263px;
+    @media (min-width: $screen-sm) {
+      padding-left: 282px;
+      width: 720px;
     }
 
-    &__descr {
+    @media (min-width: $screen-lg) {
       width: 1140px;
       padding-left: 293px;
     }
   }
+
 }

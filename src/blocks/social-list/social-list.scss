@@ -6,6 +6,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  display: flex;
+  padding-left: 0;
   list-style: none;
+
+  &__item {
+    margin-right: 10px;
+  }
 
 }

@@ -39,8 +39,26 @@
     min-height: 63px;
     padding: 13px 65px 13px 20px;
 
+    @media (min-width: $screen-sm) {
+      position: relative;
+    }
+
     @media (min-width: $screen-lg) {
       padding-right: 90px;
+    }
+
+    svg {
+
+      @media (min-width: $screen-sm) {
+        display: block;
+        position: absolute;
+        top: 24px;
+        right: 19px;
+    }
+
+      @media (min-width: $screen-xs) {
+        display: none;
+      }
     }
   }
 

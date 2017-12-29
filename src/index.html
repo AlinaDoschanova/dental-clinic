@@ -26,14 +26,14 @@
               <img src="img/logo--mobile.svg" alt="Дентал Клиник"  class="page-header__logo-wrap-im">
             </picture>
           </a>
-          <button class="burger">
+          <button class="burger" id="menu-toggler">
             <span class="burger__icon"></span>
             <span class="burger__text">Показать меню</span>
           </button>
         </div>
         <ul class="page-header__addresses  addresses">
           <li class="addresses__item-left">
-            <svg width="13" height="17">
+            <svg width="13" height="17" fill="#2aa9e0">
               <use xlink:href="img/sprite-svg.svg#place"/>
             </svg>
             <span class="addresses__city">г. Новый Уренгой</span><br>
@@ -41,7 +41,7 @@
             <a href="tel:+70000000000" class="addresses__phone">+7 000 000 0000</a>
           </li>
           <li class="addresses__item-right">
-            <svg width="13" height="17">
+            <svg width="13" height="17"  fill="#2aa9e0">
               <use xlink:href="img/sprite-svg.svg#place"/>
             </svg>
             <span class="addresses__city">г. Улан-Удэ</span><br>
@@ -73,7 +73,7 @@
   </header>
 
   <nav class="main-nav">
-    <div class="main-nav__inner">
+    <div class="main-nav__inner" id="menu">
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="" class="main-nav__link">Стоматология</a></li>
         <li class="main-nav__item  main-nav__item--submenu  main-nav__item--active"><a href="" class="main-nav__link">Услуги</a>
@@ -155,67 +155,101 @@
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/implantation.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Имплантация</span>
-            <!-- <svg width="48" height="48"> -->
-              <!-- <use xlink:href="img/sprite-svg.svg#right-arrow"/> -->
-            <!-- </svg> -->
+            <span class="service-minicard__text">Имплантация
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item" id="candelete">
           <a href="" class="service-minicard">
             <img src="img/bite-correction.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Исправление прикуса</span>
-            <!-- <svg width="48" height="48"> -->
-              <!-- <use xlink:href="img/sprite-svg.svg#right-arrow"/> -->
-            <!-- </svg> -->
+            <span class="service-minicard__text">Исправление прикуса
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/childrens-dentist.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Детский стоматолог</span>
+            <span class="service-minicard__text">Детский стоматолог
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/therapy.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Терапия</span>
+            <span class="service-minicard__text">Терапия
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/surgery.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Хирургия</span>
+            <span class="service-minicard__text">Хирургия
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/laser-surgery.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Лазерная хирургия</span>
+            <span class="service-minicard__text">Лазерная хирургия
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/fixed-prosthesis.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Несъёмное протезирование</span>
+            <span class="service-minicard__text">Несъёмное протезирование
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/removable-prosthesis.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Съёмное протезирование</span>
+            <span class="service-minicard__text">Съёмное протезирование
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/periodontology.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Парадонтология</span>
+            <span class="service-minicard__text">Парадонтология
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
         <li class="services__item">
           <a href="" class="service-minicard">
             <img src="img/anesthesia.png" alt="" class="service-minicard__img">
-            <span class="service-minicard__text">Анестезия</span>
+            <span class="service-minicard__text">Анестезия
+              <svg width="20" height="20">
+                <use xlink:href="img/sprite-svg.svg#arrow"/>
+              </svg>
+            </span>
           </a>
         </li>
       </ul>
@@ -453,26 +487,98 @@
         <h3 class="page-footer__title">Контакты</h3>
         <ul class="page-footer__contacts-list">
           <li class="page-footer__contacts-item">
-            <span class="page-footer__address">Новый Уренгой ул. Ленина, дом 3</span>
-            <a href="tel:+70000000000" class="page-footer__phone">+7 000 000 0000</a>
-            <span class="page-footer__opened">Ежедневно: 10:00-21:00</span>
+            <span class="page-footer__address">
+              <svg width="13" height="17" fill="#fff">
+                <use xlink:href="img/sprite-svg.svg#place"/>
+              </svg>
+              Новый Уренгой ул. Ленина, дом 3
+            </span>
+            <a href="tel:+70000000000" class="page-footer__phone">
+              <svg width="17" height="17" fill="#fff">
+                <use xlink:href="img/sprite-svg.svg#phone"/>
+              </svg>
+              +7 000 000 0000
+            </a>
+            <span class="page-footer__opened">
+              <svg width="17" height="17" fill="#fff">
+                <use xlink:href="img/sprite-svg.svg#time"/>
+              </svg>
+              Ежедневно: 10:00-21:00
+            </span>
           </li>
-          <li class="contacts-item">
-            <span class="page-footer__address">Улан-Удэ пр. Строителей, дом 99</span>
-            <a href="tel:+70000000000" class="page-footer__phone">+7 000 000 0000</a>
-            <span class="page-footer__opened">Ежедневно: 10:00-21:00</span>
+          <li class="page-footer__contacts-item">
+            <span class="page-footer__address">
+              <svg width="13" height="17" fill="#fff">
+                <use xlink:href="img/sprite-svg.svg#place"/>
+              </svg>
+              Улан-Удэ пр. Строителей, дом 99
+            </span>
+            <a href="tel:+70000000000" class="page-footer__phone">
+              <svg width="17" height="17" fill="#fff">
+                <use xlink:href="img/sprite-svg.svg#phone"/>
+              </svg>
+              +7 000 000 0000
+            </a>
+            <span class="page-footer__opened">
+              <svg width="17" height="17" fill="#fff">
+                <use xlink:href="img/sprite-svg.svg#time"/>
+              </svg>
+              Ежедневно: 10:00-21:00
+            </span>
           </li>
         </ul>
       </section>
       <section class="share">
         <h3 class="share__title">Поделитесь с друзьями</h3>
         <ul class="social-list">
-          <li class="social-list__item  vkontakte"><a href="" class="social-link  vkontakte-link"><span>Мы во Вконтакте</span></a></li>
-          <li class="social-list__item  odnoklassniki"><a href="" class="social-link  odnoklassniki-link"><span>Мы в Одноклассниках</span></a></li>
-          <li class="social-list__item  facebook"><a href="" class="social-link  facebook-link"><span>Мы в Facebook</span></a></li>
-          <li class="social-list__item  twitter"><a href="" class="social-link  twitter-link"><span>Мы в Twitter</a></li>
-          <li class="social-list__item  google-plus"><a href="" class="social-link  google-plus-link"><span>Мы в Google+</span></a></li>
-          <li class="social-list__item  instagram"><a href="" class="social-link  instagram-link"><span>Мы в Instagram</span></a></li>
+          <li class="social-list__item  vkontakte">
+            <a href="" class="social-link  vkontakte-link">
+              <svg width="25" height="14">
+                <use xlink:href="img/sprite-svg.svg#vk"/>
+              </svg>
+              <span>Мы во Вконтакте</span>
+            </a>
+          </li>
+          <li class="social-list__item  odnoklassniki">
+            <a href="" class="social-link odnoklassniki-link">
+              <svg class="odnoklassniki-link" width="15" height="26">
+                <use xlink:href="img/sprite-svg.svg#ok"/>
+              </svg>
+              <span>Мы в Одноклассниках</span>
+            </a>
+          </li>
+          <li class="social-list__item  facebook">
+            <a href="" class="social-link  facebook-link">
+              <svg width="22" height="22">
+                <use xlink:href="img/sprite-svg.svg#fb"/>
+              </svg>
+              <span>Мы в Facebook</span>
+            </a>
+          </li>
+          <li class="social-list__item  twitter">
+            <a href="" class="social-link  twitter-link">
+              <svg width="22" height="19">
+                <use xlink:href="img/sprite-svg.svg#twitter"/>
+              </svg>
+              <span>Мы в Twitter</span>
+            </a>
+            </li>
+          <li class="social-list__item  google-plus">
+            <a href="" class="social-link  google-plus-link">
+              <svg width="29" height="18">
+                <use xlink:href="img/sprite-svg.svg#google"/>
+              </svg>
+              <span>Мы в Google+</span>
+            </a>
+          </li>
+          <li class="social-list__item  instagram">
+            <a href="" class="social-link  instagram-link">
+              <svg width="21" height="21">
+                <use xlink:href="img/sprite-svg.svg#instagram"/>
+              </svg>
+              <span>Мы в Instagram</span>
+            </a>
+          </li>
         </ul>
       </section>
       <div class="page-footer__license">

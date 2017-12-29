@@ -10,11 +10,38 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $screen-lg) {
+      justify-content: flex-start;
+      margin-right: -12px;
+      margin-left: -12px;
+    }
   }
 
   &__inner {
     padding-left: 20px;
     padding-right: 20px;
+
+    @media (min-width: $screen-sm) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 720px;
+      margin: auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+      padding-right: 0;
+      width: 1140px;
+      margin: auto;
+    }
   }
 
   &__title {
@@ -22,61 +49,27 @@
     margin-top: 27px;
     margin-bottom: 35px;
     text-transform: uppercase;
-  }
 
-  &__list-item {
-    width: 280px;
-  }
-
-  @media (min-width: $screen-sm) {
-
-    &__inner {
-      padding-left: 0;
-      padding-right: 0;
-      width: 720px;
-      margin: auto;
-    }
-
-    &__list {
-      display: block;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    &__list-item {
-      margin-bottom: 30px;
-    }
-
-    &__title {
+    @media (min-width: $screen-sm) {
       margin-top: 56px;
       margin-bottom: 30px;
     }
 
+    @media (min-width: $screen-lg) {
+      margin-top: 80px;
+    }
   }
 
-  @media (min-width: $screen-lg) {
+  &__list-item {
+    width: 280px;
 
-    &__inner {
-      padding-left: 0;
-      padding-right: 0;
-      width: 1140px;
-      margin: auto;
+    @media (min-width: $screen-sm) {
+      margin-bottom: 30px;
     }
 
-    &__list {
-      justify-content: flex-start;
-      margin-right: -12px;
-      margin-left: -12px;
-    }
-
-    &__list-item {
+    @media (min-width: $screen-lg) {
       margin-right: 12px;
       margin-left: 12px;
-    }
-
-    &__title {
-      margin-top: 80px;
     }
   }
 

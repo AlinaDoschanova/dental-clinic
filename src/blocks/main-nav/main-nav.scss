@@ -22,9 +22,30 @@
     padding-left: 22px;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fff;
 
     @media (min-width: $screen-lg) {
       width: 1180px;
+      background-color: $main-color;
+    }
+
+    @media (max-width: ($screen-lg - 1)) {
+
+      .js & {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .js &--shown {
+        height: auto;
+        opacity: 1;
+      }
     }
   }
 
@@ -145,5 +166,19 @@
     #{$block-name}__list-lvl-2 & {
       white-space: nowrap;
     }
+  }
+
+  &__item--submenu {
+
+    #{$block-name}__link:hover {
+
+      @media (min-width: $screen-lg) {
+        background-color: $main-color--darkest;
+      }
+    }
+  }
+
+  &__link:hover {
+    background-color: $main-color--dark;
   }
 }

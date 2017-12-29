@@ -17,12 +17,26 @@
     height: 354px;
     background-color: $main-color--light;
     color: #fff;
+  }
 
-    .owl-stage-outer {
+  @media (min-width: $screen-lg) {
+    height: 400px;
+  }
+
+  .owl-stage-outer {
+
+    @media (min-width: $screen-sm) {
       height: 354px;
-    }
+  }
 
-    .owl-dots {
+    @media (min-width: $screen-lg) {
+    height: 400px;
+    }
+  }
+
+  .owl-dots {
+
+    @media (min-width: $screen-sm) {
       display: flex;
       position: absolute;
       left: 50%;
@@ -30,7 +44,15 @@
       transform: translateX(-360px);
     }
 
-    .owl-dot {
+    @media (min-width: $screen-lg) {
+      transform: translateX(-568px);
+      bottom: 73px;
+    }
+  }
+
+  .owl-dot {
+
+    @media (min-width: $screen-sm) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -52,8 +74,11 @@
         border: none;
       }
     }
+  }
 
-    &__item-inner {
+  &__item-inner {
+
+    @media (min-width: $screen-sm) {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -65,7 +90,17 @@
       padding-bottom: 90px;
     }
 
-    &__title {
+    @media (min-width: $screen-lg) {
+      min-height: 400px;
+      width: 1136px;
+      padding-right: 570px;
+      padding-bottom: 0;
+    }
+  }
+
+  &__title {
+
+    @media (min-width: $screen-sm) {
       font-size: 38px;
       text-transform: uppercase;
       padding-top: 43px;
@@ -74,14 +109,31 @@
       white-space: nowrap;
     }
 
-    &__descr {
+    @media (min-width: $screen-lg) {
+      font-size: 48px;
+      line-height: 57px;
+      margin-bottom: 38px;
+      padding-top: 44px;
+    }
+  }
+
+  &__descr {
+
+    @media (min-width: $screen-sm) {
       letter-spacing: 0.06em;
       max-width: 380px;
       margin-bottom: auto;
       color: $text-color-light;
     }
 
-    &__img {
+    @media (min-width: $screen-lg) {
+      max-width: 680px;
+    }
+  }
+
+  &__img {
+
+    @media (min-width: $screen-sm) {
       position: absolute;
       bottom: 0;
       right: 0;
@@ -98,75 +150,51 @@
       .owl-item.active & {
         opacity: 1;
       }
+    }
 
-      &--boy {
+    &--boy {
+
+      @media (min-width: $screen-sm) {
         right: -150px;
+        top: 0;
         bottom: -45px;
       }
 
-      &--laughing-woman-mouth {
+      @media (min-width: $screen-lg) {
+        right: -70px;
+        bottom: 0;
+        top: 0;
+        height: 400px;
+      }
+    }
+
+    &--laughing-woman-mouth {
+
+      @media (min-width: $screen-sm) {
         height: 354px;
         right: -100px;
         bottom: 0;
       }
 
-      &--dentist {
-       right: -100px;
-      }
-    }
-  }
-
-  @media (min-width: $screen-lg) {
-
-    height: 400px;
-
-    .owl-stage-outer {
-      height: 400px;
-    }
-
-    &__item-inner {
-      min-height: 400px;
-      width: 1136px;
-      padding-right: 570px;
-      padding-bottom: 0;
-    }
-
-    &__title {
-      font-size: 48px;
-      line-height: 57px;
-      margin-bottom: 38px;
-      padding-top: 44px;
-    }
-
-    &__img {
-
-      &--boy {
-        right: -70px;
-        bottom: 0;
-      }
-
-      &--laughing-woman-mouth {
+      @media (min-width: $screen-lg) {
         right: -183px;
         height: auto;
         width: auto !important;
       }
+    }
 
-      &--dentist {
+    &--dentist {
+
+      @media (min-width: $screen-sm) {
+        right: -100px;
+      }
+
+     @media (min-width: $screen-lg) {
        right: -100px;
        height: auto;
        width: auto !important;
-      }
-
+     }
     }
-
-    .owl-dots {
-      transform: translateX(-568px);
-      bottom: 73px;
-    }
-
-    &__descr {
-      max-width: 680px;
-    }
-
   }
+
 }

@@ -48,6 +48,10 @@ $(document).ready(function(){
     $(this).closest('.services-sidebar__item').find('.services-sidebar__lvl-2').slideToggle();0
   });
 
+  // Работа главного меню
+  $('#menu-toggler').on('click', function(){
+    $('#menu').toggleClass('main-nav__inner--shown');
+  });
 });
 
 // Если на проекте нет jQuery, но хочется $( document ).ready... (IE9+)
