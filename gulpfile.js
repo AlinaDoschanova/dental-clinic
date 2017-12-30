@@ -85,7 +85,7 @@ gulp.task('style', function () {
         this.emit('end');
       }
     }))
-    .pipe(wait(100))
+    .pipe(wait(200))
     .pipe(sourcemaps.init())                               // инициируем карту кода
     .pipe(sass())                                          // компилируем
     .pipe(postcss(postCssPlugins))                         // делаем постпроцессинг
