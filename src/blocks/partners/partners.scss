@@ -9,9 +9,37 @@
   background-color: $main-color;
   height: 280px;
 
+  @media (min-width: $screen-sm) {
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $screen-lg) {
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
   &__inner {
     width: 220px;
     margin: auto;
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      justify-content: center;
+      width: 720px;
+      height: 100%;
+      margin: auto;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: center;
+      width: 1140px;
+      height: 100%;
+      margin: auto;
+    }
   }
 
   &__title {
@@ -23,6 +51,22 @@
     color: #fff;
     text-align: center;
     margin-top: 0;
+
+    @media (min-width: $screen-sm) {
+      font-size: $font-size--h2+2;
+      line-height: $font-size--h2+2;;
+      margin-right: 68px;
+      margin-top: 23px;
+      padding-top: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: $font-size--h2+4;
+      line-height: 37.154px;
+      margin-top: 17px;
+      margin-right: 69px;
+      padding-top: 0;
+    }
   }
 
     &__item {
@@ -30,11 +74,23 @@
       vertical-align: middle;
       margin-bottom: 30px;
 
+      @media (min-width: $screen-lg) {
+        margin-bottom: 0;
+      }
+
       &--vtb {
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 20px;
         padding-right: 19px;
+
+        @media (min-width: $screen-sm) {
+          margin-right: 18px;
+        }
+
+        @media (min-width: $screen-lg) {
+          margin-right: 20px;
+        }
       }
 
       &--sogaz {
@@ -43,77 +99,12 @@
         padding-left: 30px;
         padding-right: 32px;
         margin-left: 15px;
-      }
-    }
 
-  @media (min-width: $screen-sm) {
-    height: 100px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    &__inner {
-      display: flex;
-      justify-content: center;
-      width: 720px;
-      height: 100%;
-      margin: auto;
-    }
-
-    &__title {
-      font-size: $font-size--h2+2;
-      line-height: $font-size--h2+2;;
-      margin-right: 68px;
-      margin-top: 23px;
-      padding-top: 0;
-    }
-
-    &__item {
-
-      &--vtb {
-        margin-right: 18px;
-      }
-
-        &--sogaz {
+        @media (min-width: $screen-sm) {
           margin-left: 0;
-      }
-    }
-
-  }
-
-  @media (min-width: $screen-lg) {
-
-  height: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-    &__inner {
-      display: flex;
-      justify-content: center;
-      width: 1140px;
-      height: 100%;
-      margin: auto;
-    }
-
-    &__title {
-      font-size: $font-size--h2+4;
-      line-height: 37.154px;
-      margin-top: 17px;
-      margin-right: 69px;
-      padding-top: 0;
-    }
-
-    &__item {
-      margin-bottom: 0;
-      &--vtb {
-        margin-right: 20px;
+        }
       }
 
-      &--sogaz {
-        margin-left: 0;
     }
-
-    }
-
-  }
 
 }
