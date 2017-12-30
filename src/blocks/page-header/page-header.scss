@@ -120,27 +120,15 @@
 
 
   &__btn-wrap {
+    display: none;
 
-    margin-top: 25px;
-    margin-bottom: 33px;
-    margin-left: 80px;
-
-    .btn {
-      display: none;
-
-      @media (min-width: $screen-lg) {
-        display: block;
-        padding: 18px 20px;
-        float: right;
-        background-color: $main-color;
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: $font-size;
-        line-height: $font-size+2;
-        text-align: center;
-      }
+    @media (min-width: $screen-lg) {
+      margin-top: 25px;
+      margin-bottom: 33px;
+      margin-left: 80px;
+      display: block;
     }
+
   }
 
   &__logo-wrap {
@@ -149,7 +137,6 @@
     justify-content: space-between;
     padding: 15px 0;
     border-bottom: 1px solid $main-color--lighten;
-    margin-bottom: 35px;
     margin-right: auto;
 
     @media (min-width: $screen-sm) {

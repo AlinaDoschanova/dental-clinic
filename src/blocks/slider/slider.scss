@@ -94,7 +94,7 @@
       min-height: 400px;
       width: 1136px;
       padding-right: 570px;
-      padding-bottom: 0;
+      padding-bottom: 120px;
     }
   }
 
@@ -105,14 +105,13 @@
       text-transform: uppercase;
       padding-top: 43px;
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 0;
       white-space: nowrap;
     }
 
     @media (min-width: $screen-lg) {
       font-size: 48px;
       line-height: 57px;
-      margin-bottom: 38px;
       padding-top: 44px;
     }
   }
@@ -122,8 +121,9 @@
     @media (min-width: $screen-sm) {
       letter-spacing: 0.06em;
       max-width: 380px;
+      margin-top: auto;
       margin-bottom: auto;
-      color: $text-color-light;
+      color: $text-color--light;
     }
 
     @media (min-width: $screen-lg) {

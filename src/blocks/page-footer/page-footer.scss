@@ -47,7 +47,7 @@
 
   &__item a {
     text-decoration: none;
-    color: $text-color-light;
+    color: $text-color--light;
   }
 
   &__item a:hover {
@@ -60,7 +60,7 @@
     color: #fff;
     padding-top: 26px;
     padding-bottom: 14px;
-    border-bottom: 1px solid $text-color-light;
+    border-bottom: 1px solid $text-color--light;
     margin-top: 0;
 
     @media (min-width: $screen-sm) {
@@ -183,9 +183,9 @@
 
     padding-top: 14px;
     padding-bottom: 37px;
-    border-top: 1px solid $text-color-light;
+    border-top: 1px solid $text-color--light;
     text-align: center;
-    color: $text-color-light;
+    color: $text-color--light;
 
     @media (min-width: $screen-sm) {
       width: 100%;
@@ -193,7 +193,7 @@
       padding-bottom: 30px;
       border-top: 1px solid #fff;
       text-align: center;
-      color: $text-color-light;
+      color: $text-color--light;
     }
 
     @media (min-width: $screen-lg) {
