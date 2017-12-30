@@ -273,6 +273,7 @@ gulp.task('serve', ['build'], function() {
   // Слежение за стилями
   gulp.watch([
     dirs.source + '/scss/style.scss',
+    dirs.source + '/scss/variables.scss',
     dirs.source + '/blocks/**/*.scss',
   ], ['style']);
   // Слежение за html
