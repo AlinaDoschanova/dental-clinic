@@ -75,6 +75,7 @@
 
     @media (min-width: $screen-sm) {
       display: flex;
+      margin-bottom: 24px;
     }
   }
 
@@ -129,7 +130,7 @@
     margin-bottom: 39px;
 
     @media (min-width: $screen-sm) {
-      margin-top: 26px;
+      margin-top: 24px;
     }
   }
 
@@ -174,6 +175,7 @@
     margin-bottom: 23px;
 
     @media (min-width: $screen-sm) {
+      margin-bottom: 0;
       margin-right: 65px;
     }
   }
@@ -217,6 +219,19 @@
       padding-bottom: 0;
     }
 
+  }
+
+  &__decor-wrap {
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $screen-lg) {
+      width: 588px;
+    }
   }
 
 }

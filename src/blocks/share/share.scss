@@ -6,12 +6,24 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  @media (min-width: $screen-sm) {
+    width: 246px;
+    margin-right: 55px;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-right: 45px;
+  }
+
   &__title {
     font-size: $font-size + 4;
     text-transform: uppercase;
+    width: 246px;
     color: #fff;
     border-bottom: 1px solid $text-color--light;
     padding-bottom: 10px;
+    margin-bottom: 10px;
+    white-space: nowrap;
 
     @media (min-width: $screen-sm) {
       margin-right: 55px;

@@ -73,4 +73,41 @@
     }
   }
 
+  .owl-nav {
+
+    @media (min-width: $screen-xs) {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 21px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .owl-prev {
+
+    @media (min-width: $screen-xs) {
+      width: 40px;
+      height: 40px;
+      border: 0;
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-image: url(../img/arrow-prev.svg);
+      margin-right: 10px;
+    }
+  }
+
+  .owl-next {
+
+    @media (min-width: $screen-xs) {
+      width: 40px;
+      height: 40px;
+      border: 0;
+      font: 0/0 a;
+      text-shadow: none;
+      color: transparent;
+      background-image: url(../img/arrow-next.svg);
+    }
+  }
+
 }
