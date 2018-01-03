@@ -149,7 +149,7 @@ a {
     .main-nav__list-lvl-2 .main-nav__link {
       white-space: nowrap; }
   .main-nav__link:hover {
-    background-color: #3f94af; }
+    background-color: #E9F5F9; }
 
 .page-header__inner {
   padding-left: 20px;
@@ -1185,6 +1185,8 @@ a {
         color: #fff; }
     .main-nav__item--submenu .main-nav__link:hover {
       background-color: #31758a; }
+      .main-nav__link:hover {
+        background-color: #3f94af; }
     .page-header__inner {
       display: -webkit-box;
       display: -ms-flexbox;
