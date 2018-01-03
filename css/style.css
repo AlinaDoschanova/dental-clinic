@@ -121,8 +121,6 @@ a {
   font-size: 14px;
   line-height: 26px; }
   .main-nav__inner {
-    padding-right: 22px;
-    padding-left: 22px;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff; }
@@ -141,7 +139,7 @@ a {
   .main-nav__link {
     position: relative;
     display: block;
-    padding: 7px 16px;
+    padding: 7px 19px;
     color: #000;
     text-decoration: none; }
     .main-nav__item > .main-nav__link {
@@ -273,20 +271,20 @@ a {
       top: -10px; }
     .burger__icon:after {
       top: 10px; }
-  .burger--close__icon {
+  .burger--close .burger__icon {
     -webkit-transition: background 0.3s 0s;
     transition: background 0.3s 0s;
     background: transparent; }
-    .burger--close__icon:before, .burger--close__icon:after {
+    .burger--close .burger__icon:before, .burger--close .burger__icon:after {
       -webkit-transition: top 0.3s, -webkit-transform 0.3s 0.3s;
       transition: top 0.3s, -webkit-transform 0.3s 0.3s;
       transition: top 0.3s, transform 0.3s 0.3s;
       transition: top 0.3s, transform 0.3s 0.3s, -webkit-transform 0.3s 0.3s;
       top: 0; }
-    .burger--close__icon:before {
+    .burger--close .burger__icon:before {
       -webkit-transform: rotate3d(0, 0, 1, 45deg);
               transform: rotate3d(0, 0, 1, 45deg); }
-    .burger--close__icon:after {
+    .burger--close .burger__icon:after {
       -webkit-transform: rotate3d(0, 0, 1, -45deg);
               transform: rotate3d(0, 0, 1, -45deg); }
 
