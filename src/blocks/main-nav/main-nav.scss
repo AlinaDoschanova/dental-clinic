@@ -177,6 +177,10 @@
   }
 
   &__link:hover {
-    background-color: $main-color--dark;
+    background-color: $main-color--lighten;
+
+    @media (min-width: $screen-lg) {
+      background-color: $main-color--dark;
+  }
   }
 }
