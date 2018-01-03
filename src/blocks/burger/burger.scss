@@ -69,7 +69,7 @@ $toggler-part-bg-color:       #000 !default;
 
   &--close {
 
-    &__icon {
+    #{$block-name}__icon {
       transition: background 0.3s 0s;
       background: transparent;
 
