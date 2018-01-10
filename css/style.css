@@ -310,9 +310,10 @@ a {
   padding: 37px 20px 0 20px; }
 
 .services__list {
-  padding-left: 0;
-  margin-bottom: 20px;
-  list-style: none; }
+  padding: 0;
+  margin: 0 0 20px;
+  list-style: none;
+  overflow: hidden; }
 
 .services__item {
   margin-bottom: 20px; }
@@ -854,11 +855,10 @@ a {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       margin-left: -15px;
-      margin-right: -15px;
-      margin-bottom: -10px; }
+      margin-right: -15px; }
     .services__item {
-      width: 220px;
-      margin: 0 15px 30px 15px; }
+      width: 250px;
+      padding: 0 15px 30px 15px; }
     .service-minicard {
       padding-top: 120px; }
       .service-minicard__text {
@@ -1064,6 +1064,7 @@ a {
                 align-items: flex-start;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+        overflow: hidden;
         padding-left: 0;
         padding-right: 0;
         width: 720px;
@@ -1226,7 +1227,7 @@ a {
     .services__list {
       margin-bottom: 0; }
     .services__item {
-      width: 260px; }
+      width: 290px; }
     .services__dscr {
       margin-bottom: 60px; }
     .service-minicard {
