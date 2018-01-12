@@ -40,16 +40,16 @@
   }
 
   &__list {
-    padding-left: 0;
-    margin-bottom: 20px;
+    padding: 0;
+    margin: 0 0 20px;
     list-style: none;
+    overflow: hidden; // костыль IE-шечке. СДОХНИ, СДОХНИ УЖЕ!
 
     @media (min-width: $screen-sm) {
       display: flex;
       flex-wrap: wrap;
       margin-left: -15px;
       margin-right: -15px;
-      margin-bottom: -10px;
     }
 
     @media (min-width: $screen-lg) {
@@ -61,12 +61,12 @@
     margin-bottom: 20px;
 
     @media (min-width: $screen-sm) {
-      width: 220px;
-      margin: 0 15px 30px 15px;
+      width: 250px;
+      padding: 0 15px 30px 15px; // используй padding для отступов ячеек
     }
 
     @media (min-width: $screen-lg) {
-      width: 260px;
+      width: 290px;
     }
   }
 
