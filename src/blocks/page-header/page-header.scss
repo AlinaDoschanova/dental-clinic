@@ -82,6 +82,8 @@
 
     &__item-left {
       position: relative;
+      min-width: 180px;
+      max-width: 200px;
       padding-right: 37px;
       padding-left: 23px;
 
@@ -93,6 +95,8 @@
 
     &__item-right {
       position: relative;
+      min-width: 180px;
+      max-width: 200px;
       padding-left: 23px;
 
       svg {
@@ -123,6 +127,7 @@
     display: none;
 
     @media (min-width: $screen-lg) {
+      max-width: 190px;
       margin-top: 25px;
       margin-bottom: 33px;
       margin-left: 80px;
@@ -147,6 +152,7 @@
       padding-bottom: 20px;
       flex-direction: row;
       justify-content: flex-start;
+      flex-shrink: 0;
     }
   }
 
