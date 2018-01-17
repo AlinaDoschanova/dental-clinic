@@ -98,6 +98,10 @@
     }
   }
 
+  &__item {
+    overflow: hidden;
+  }
+
   &__title {
 
     @media (min-width: $screen-sm) {
