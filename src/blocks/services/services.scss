@@ -44,6 +44,7 @@
     margin: 0 0 20px;
     list-style: none;
     overflow: hidden; // костыль IE-шечке. СДОХНИ, СДОХНИ УЖЕ!
+    margin-bottom: 0;
 
     @media (min-width: $screen-sm) {
       display: flex;
@@ -52,9 +53,6 @@
       margin-right: -15px;
     }
 
-    @media (min-width: $screen-lg) {
-      margin-bottom: 0;
-    }
   }
 
   &__item {
@@ -70,18 +68,24 @@
     }
   }
 
-  &__dscr {
-    margin-bottom: 10px;
+  &__descr {
+    margin-top: -3px;
+    margin-bottom: 24px;
+
+    @media (min-width: $screen-sm) {
+      margin-top: -33px;
+    }
 
     @media (min-width: $screen-lg) {
-      margin-bottom: 60px;
+      margin-top: -23px;
+      margin-bottom: 44px;
     }
 
     p {
       font-size: 14px;
       line-height: 20px;
       padding-top: 10px;
-      padding-bottom: 20px;
+      padding-bottom: 10px;
       margin-top: 0;
       margin-bottom: 0;
     }
