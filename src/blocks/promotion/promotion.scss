@@ -13,12 +13,13 @@
 
   @media (min-width: $screen-sm) {
     width: 345px;
-    height: 340px;
+    min-height: 340px;
+    height: auto;
   }
 
   @media (min-width: $screen-lg) {
     width: 260px;
-    height: 367px;
+    min-height: 367px;
   }
 
   &__img {
