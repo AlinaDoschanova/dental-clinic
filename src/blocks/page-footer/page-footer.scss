@@ -43,7 +43,6 @@
     padding-left: 0;
     list-style: none;
     margin-bottom: 0;
-    width: 180px;
   }
 
   &__item a {
@@ -69,16 +68,6 @@
     }
   }
 
-  &__contacts-list {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 34px;
-
-    @media (min-width: $screen-sm) {
-      display: flex;
-      margin-bottom: 24px;
-    }
-  }
 
   &__address {
     position: relative;
@@ -160,6 +149,14 @@
     }
   }
 
+  &__contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
   &__contacts {
 
     @media (min-width: $screen-sm) {
@@ -172,11 +169,11 @@
   }
 
   &__contacts-item {
-
-    margin-bottom: 23px;
+    max-width: 100%;
+    margin-bottom: 24px;
+    flex-shrink: 0;
 
     @media (min-width: $screen-sm) {
-      margin-bottom: 0;
       margin-right: 65px;
     }
   }
