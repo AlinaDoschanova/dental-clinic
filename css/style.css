@@ -553,7 +553,8 @@ a {
   text-transform: uppercase; }
 
 .promotions__list-item {
-  width: 280px; }
+  width: 280px;
+  margin: auto; }
 
 .about {
   padding-top: 80px;
@@ -910,7 +911,7 @@ a {
       margin-top: 56px;
       margin-bottom: 30px; }
     .promotions__list-item {
-      margin-bottom: 30px; }
+      margin: 0 0 30px 0; }
       .about__inner {
         width: 748px;
         margin: auto;
