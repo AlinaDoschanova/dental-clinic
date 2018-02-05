@@ -62,9 +62,10 @@
 
   &__list-item {
     width: 280px;
+    margin: auto;
 
     @media (min-width: $screen-sm) {
-      margin-bottom: 30px;
+      margin: 0 0 30px 0;
     }
 
     @media (min-width: $screen-lg) {
