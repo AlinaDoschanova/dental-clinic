@@ -7,7 +7,7 @@
   $block-name:                &; // #{$block-name}__element
 
   @media (min-width: $screen-sm) {
-    width: 246px;
+    min-width: 246px;
     margin-right: 55px;
   }
 
@@ -18,15 +18,11 @@
   &__title {
     font-size: $font-size + 4;
     text-transform: uppercase;
-    width: 246px;
+    width: auto;
     color: #fff;
     border-bottom: 1px solid $text-color--light;
     padding-bottom: 10px;
     margin-bottom: 10px;
     white-space: nowrap;
-
-    @media (min-width: $screen-sm) {
-      margin-right: 55px;
-    }
   }
 }
