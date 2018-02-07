@@ -203,22 +203,20 @@
     @media (min-width: $screen-lg) {
       line-height: 14px;
       display: flex;
-      justify-content: space-between;
-      padding-top: 20px;
-      padding-bottom: 23px;
+      flex-wrap: wrap;
+      padding-top: 23px;
+      padding-bottom: 26px;
+      text-align: left;
     }
   }
 
   &__copyright {
 
-    margin-bottom: 12px;
-
-    @media (min-width: $screen-sm) {
-      padding-bottom: 10px;
-    }
+    padding-bottom: 12px;
 
     @media (min-width: $screen-lg) {
       padding-bottom: 0;
+      margin-right: auto;
     }
 
   }
