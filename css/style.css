@@ -1186,7 +1186,7 @@ a {
         .main-nav__item--submenu > .main-nav__link:after {
           content: '';
           position: absolute;
-          top: 10px;
+          top: 13px;
           right: 19px;
           width: 10px;
           height: 10px;
